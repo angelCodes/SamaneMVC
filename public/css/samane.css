@@ -1,0 +1,114 @@
+pre{
+		background-color: #fff;
+		border: none;
+	}
+		code{
+			box-shadow: 15px 5px 15px rgba(0,0,0,0.5);
+			
+			transition: 0.5s;
+		}
+		code:hover{
+			box-shadow: none;
+		}
+		.jumbotron {
+		    background-color: #fff;
+		    text-align: center;
+		}
+
+		.alert{
+			opacity: 0.9;
+		}
+		.panel{
+			border-color: #40007d;
+			box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+		}
+		.panel-heading{
+			background-color: #40007d;
+			color: #fff;
+		}
+		.logo{
+			width : 75px;
+			height : 75px;
+		}
+		/* navBar - Center with Flexbox and Text*/
+		.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 15px;
+  width: auto;
+}
+
+
+
+
+.brand-centered {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.brand-centered .navbar-brand {
+  display: flex;
+  align-items: center;
+}
+.navbar-toggle {
+    z-index: 1;
+}
+
+
+/* CSS Transform Align Navbar Brand Text  */
+.navbar-alignit .navbar-header {
+	  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  height: 50px;
+}
+.navbar-alignit .navbar-brand {
+	top: 50%;
+	display: block;
+	position: relative;
+	height: auto;
+	transform: translate(0,-50%);
+	margin-right: 15px;
+  margin-left: 15px;
+}
+
+blockquote{
+  font-size: 1.4em;
+  width:60%;
+  margin:50px auto;
+  font-family:Open Sans;
+  font-style:italic;
+  color: #555555;
+  padding:1.2em 30px 1.2em 75px;
+  border-left:8px solid #40007d ;
+  line-height:1.6;
+  position: relative;
+  background:#EDEDED;
+}
+
+blockquote::before{
+  font-family:Arial;
+  content: "\201C";
+  color:#40007d;
+  font-size:4em;
+  position: absolute;
+  left: 10px;
+  top:-10px;
+}
+
+blockquote::after{
+  content: '';
+}
+
+blockquote span{
+  display:block;
+  color:#333333;
+  font-style: normal;
+  font-weight: bold;
+  margin-top:1em;
+}

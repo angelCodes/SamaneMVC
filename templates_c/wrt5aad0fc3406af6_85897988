@@ -1,0 +1,165 @@
+<?php
+/* Smarty version 3.1.30, created on 2018-03-17 13:53:23
+  from "C:\xampp\htdocs\samaneMVC\view\accueil\index.html" */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.30',
+  'unifunc' => 'content_5aad0fc33bb3a6_41000222',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '2e77df5ec5e71ba72408eaa256f630a9982051d5' => 
+    array (
+      0 => 'C:\\xampp\\htdocs\\samaneMVC\\view\\accueil\\index.html',
+      1 => 1521291195,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5aad0fc33bb3a6_41000222 (Smarty_Internal_Template $_smarty_tpl) {
+?>
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>page d'accueil</title>
+		<!-- l'appel de <?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
+ vous permet de recupérer le chemin de votre site web  -->
+		<link type="text/css" rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
+public/css/bootstrap.min.css"/>
+		<link type="text/css" rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
+public/css/samane.css"/>
+		<link type="text/css" rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
+public/css/ir-black.css"/>
+		<?php echo '<script'; ?>
+ src="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
+public/js/jquery-2.1.1.min.js"><?php echo '</script'; ?>
+>
+  			<?php echo '<script'; ?>
+ src="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
+public/js/highlight.pack.js"><?php echo '</script'; ?>
+>
+		<!-- integration de javascript dans le moteur de rendu de vue Smarty -->
+		
+			<?php echo '<script'; ?>
+ language=javascript>
+			 function load_design() {
+			   document.getElementById("design_js").style.color = "#40007d";
+			 }
+
+			<?php echo '</script'; ?>
+>
+		
+		
+
+			
+ 		    <?php echo '<script'; ?>
+ type="text/javascript">
+             hljs.initHighlightingOnLoad();
+ 		    <?php echo '</script'; ?>
+>
+		
+	</head>
+	<style type="text/css" media="screen">
+
+		.jumbotron{
+			/*background-image: url("<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
+public/image/bg2.png");
+			background-size: cover;
+			color: #fff;*/
+		}
+		.alert{
+			opacity: 0.9;
+		}
+		.panel{
+			border-color: #40007d;
+			box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+		}
+		.panel-heading{
+			background-color: #40007d;
+			color: #fff;
+		}
+	</style>
+	<body onload="load_design()">
+		<div class="nav navbar navbar-default navbar-fixed-top">
+			<div class="navbar-brand">
+				<img src="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
+public/image/logo.jpg" class="resize" />
+			</div>
+			<ul class="nav navbar-nav">
+				<!-- l'appel de <?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
+ vous permet de recupérer le chemin de votre site web  -->
+				<li><a href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
+Test/index">Menu page test</a></li>
+				<li><a href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
+Test/getID/1">Menu page test 2</a></li>
+				<li><a href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
+Test/liste">Menu page test liste</a></li>
+			</ul>
+		</div>
+	
+		<div class="jumbotron">
+			<div class="container">
+
+				<h1>Merci d'avoir choisi Samane!</h1>
+				<p>
+					je vous ai préparé un CRUD qui marche, il suffit tout simplement d'importer
+						la base de données qui se trouve dans le dossier view puis test (view/test);
+						cette base s'appelle samane_test.sql et elle comporte une seule table nommée test.
+						ça vous sera très utile j'espère.
+						<br/>Et surtout noubliez pas de configurer votre base de données : ou? Dans le dossier config/database.php  <br>
+				</p>
+			</div>
+		</div>
+		<div class="container">
+			
+		
+		<div class="col-md-12 col-xs-12" style="margin-top:20px;">
+			<div class="panel">
+				<div class="panel-heading">BIENVENUE A VOTRE MODELE MVC</div>
+				<div class="panel-body">
+					<pre class="col-md-6">
+<code class="php">
+// Par défaut on a:
+function connexion_params(){
+return array(
+    'host' => '127.0.0.1',
+    'user' => 'root',
+    'password' => '',
+    'database_name' => 'test',
+    'etat' => 'off'
+    );
+}
+</code>
+					</pre>
+					    <pre class="col-md-6">
+						
+						      <code class="php">
+						      //Changer à: 
+						        function connexion_params(){
+						        return array(
+						                    'host' => '127.0.0.1',
+						                    'user' => 'root',
+						                    'password' => '',
+						                    'database_name' => 'test',
+						                    'etat' => 'on'// Mettre à on
+						                    );
+						        }
+						      </code>
+					</pre>
+					
+				</div>
+				<div class="panel-footer">
+					<div id="design_js" class="text-right">MODELE DEVELOPPE PAR Ngor SECK ! <h1>Version 1.0.3</h1></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</body>
+</html>
+<?php }
+}
